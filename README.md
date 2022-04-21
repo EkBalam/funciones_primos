@@ -1,4 +1,4 @@
-# Ejercicio modulo de funciones numeros primos
+# Ejercicio módulo de funciones números primos
 ### El ejercicio
 - Escriba la función es_divisible(n, d) que indique si n es divisible por d:
 ```sh
