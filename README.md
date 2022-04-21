@@ -1,22 +1,43 @@
-# Ejemplo de examen POO
-Este es un ejemplo de como será el examen de POO, usando python y evaluado con pytest
-
+# Ejercicio modulo de funciones numeros primos
 ### El ejercicio
-Desarrolle una clase llamada PruebaExamen, dentro del archivo PruebaExamen.py
-debe tener los siguientes atributos
+- Escriba la función es_divisible(n, d) que indique si n es divisible por d:
+```sh
+  > es_divisible(15, 5)
+  > True
+  > es_divisible(15, 6)
+  > False
+```
 
-+nombre
--apellido
+- Usando la función es_divisible, escriba una función es_primo(n) que determine si un número es primo o no:
+```sh
+  > es_primo(17)
+  > True
+  > es_primo(221)
+  > False
+```
 
-y los siguientes métodos
+- Usando la función es_primo, escriba la función i_esimo_primo(i) que entregue el i-ésimo número primo.
+```sh
+  > i_esimo_primo(1)
+  > 2
+  > i_esimo_primo(20)
+  > 71
+ ```
 
-\_\_init\_\_ que recibe nombre y apellido como parámetros 
+- Usando las funciones anteriores, escriba la función primeros_primos(m) que entregue una lista de los primeros m números primos:
+ ```sh
+  > primeros_primos(10)
+  > [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+ ```
 
-getApellido que retorna el apellido
+- Usando las funciones anteriores, escriba la función primos_hasta(m) que entregue una lista de los primos menores o iguales que m:
+```sh
+  > primos_hasta(19)
+  > [2, 3, 5, 7, 11, 13, 17, 19]
+```
 
-\_\_str\_\_ que retorna el nombre completo concatenado
+- Cree un módulo llamado primos.py que contenga todas las funciones anteriores. Al ejecutar primos.py como un programa por sí solo, debe mostrar, a modo de prueba, los veinte primeros números primos. Al importarlo como un módulo, esto no debe ocurrir.
 
-PD> CUIDE QUE LOS NOMBRES DE LAS CLASES, METODOs, ATRIBUTOS Y ARCHIVOS SEAN TAL CUAL SE INSTRUYEN
 
 ### Setup command
 `sudo -H pip3 install pytest`
